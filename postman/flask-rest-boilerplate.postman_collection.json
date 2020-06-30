@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "8415850e-d6e1-4703-b4c1-4c1959ae7aa2",
+		"name": "flask-rest-boilerplate",
+		"description": "A simple postman collection to test endpoints in the flask-rest-boilerplate api.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/api/v1/employees/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "Tests the employees endpoint."
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/employees/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FirstName\": \"John\",\n\t\"LastName\": \"Doe\",\n\t\"Email\": \"john.doe@canada.ca\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/employees",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"employees"
+					]
+				},
+				"description": "A post request to add a new employee."
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/employees/<employee_id>",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "Gets a specific employee"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
