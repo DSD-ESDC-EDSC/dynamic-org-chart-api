@@ -3,6 +3,23 @@ See [parent repository](https://github.com/DSD-ESDC-EDSC/dynamic-org-chart) for 
 # dynamic-org-chart-api
 The back-end API for the Dynamic Org Chart project based on a Python Flask Rest API Boilerplate
 
+## Start up instructions
+1. In a terminal, clone the ```dynamic-org-chart-api``` repository to another folder on your computer.
+```
+git clone https://github.com/DSD-ESDC-EDSC/dynamic-org-chart-api
+```
+2. Initialize the application (this creates a local configuration and sets up the virtual environment).
+```
+./app.sh -i
+```
+3. Activate the virtual environment and start up the API
+```
+conda activate ./api_env
+```
+```
+python manage.py run
+```
+
 ## Application initialization
 
 To initialize the application, run:
